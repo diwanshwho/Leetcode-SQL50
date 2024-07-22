@@ -1,5 +1,24 @@
-# Leetcode-SQL50
-This repository contains solutions to the top 50 SQL questions from LeetCode, implemented in both standard SQL and PostgreSQL. It serves as a comprehensive practice resource for anyone looking to enhance their SQL querying skills and deepen their understanding of PostgreSQL-specific features.
+Write a solution to find the IDs of the invalid tweets. The tweet is invalid if the number of characters used in the content of the tweet is strictly greater than 15.
 
+Return the result table in any order.
 
-![download](https://github.com/user-attachments/assets/2295a5bc-ba4e-4fa5-9af0-d79ba56a42d5)
+The result format is in the following example.
+
+ 
+Input: 
+Tweets table:
++----------+----------------------------------+
+| tweet_id | content                          |
++----------+----------------------------------+
+| 1        | Vote for Biden                   |
+| 2        | Let us make America great again! |
++----------+----------------------------------+
+Output: 
++----------+
+| tweet_id |
++----------+
+| 2        |
++----------+
+Explanation: 
+Tweet 1 has length = 14. It is a valid tweet.
+Tweet 2 has length = 32. It is an invalid tweet.
